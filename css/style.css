@@ -15,6 +15,10 @@ a {
 	text-decoration: none;
 }
 
+ul {
+	list-style: none;
+}
+
 .container {
 	width: 1150px;
 	margin: 0 auto;
@@ -41,6 +45,7 @@ a {
 =========================*/
 
 .header {
+	width: 100%;
 	padding: 2.1rem 0;
 	background-color: #09111F;
 }
@@ -245,13 +250,14 @@ a {
 	width: 100%;
 	display: flex;
 	margin-bottom: 3rem;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 
 .slider__item {
 	padding: 3rem;
 	text-align: center;
 	max-width: 36.2rem;
+	border-radius: 1rem;
 	background: linear-gradient(to bottom, #0C1422, #19202D);
 }
 
@@ -307,3 +313,217 @@ a {
 .right {
 
 }
+
+/*		  reviews
+=========================*/
+
+.reviews {
+	padding: 17rem 0;
+	background-color: #020A18;
+}
+
+.reviews__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.reviews__description {
+	position: relative;
+}
+
+.reviews__title {
+	max-width: 54.8rem;
+	margin-bottom: 4rem;
+	font-weight: 700;
+	font-size: 3.8rem;
+	line-height: 130%;
+}
+
+.reviews__text {
+	max-width: 46rem;
+	margin-bottom: 2rem;
+	font-weight: 600;
+	font-size: 1.6rem;
+	line-height: 160%;
+	opacity: 0.7;
+}
+
+.reviews__img {
+
+}
+
+/*		  footer
+=========================*/
+
+.footer {
+	padding: 7.7rem 0 14.6rem 0;
+	background: linear-gradient(to bottom, #060E1C, #09111F);
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__contacts {
+	max-width: 26.1rem;
+}
+
+.footer__contacts img {
+	margin-right: 1rem;
+}
+
+.footer__logo {
+	margin-bottom: 1.5rem;
+}
+
+.footer__logo .logo__img {
+	margin-bottom: 1rem;
+}
+
+.footer__logo .logo__text {
+	font-size: 1.6rem;
+	line-height: 2.2rem;
+}
+
+.footer__text {
+	font-weight: 450;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	opacity: 0.6;
+}
+
+.footer__email {
+	margin-top: 3.7rem;font-weight: 500;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+
+.footer__phone {
+	margin: 2rem 0;
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+
+.footer__address {
+	font-weight: 500;
+	font-size: 1.3rem;
+	line-height: 1.8rem;
+}
+
+.footer__title {
+	margin-bottom: 3.2rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.6rem;
+	line-height: 2rem;
+}
+
+.footer__email,
+.footer__phone,
+.footer__address {
+	display: flex;
+}
+
+.footer ul li {
+	margin-bottom: 2rem;
+	color: #ffffff;
+}
+
+.footer__information,
+.footer__menu,
+.footer__links,
+.footer__about {
+	margin-top: 2.2rem;
+}
+
+.footer__information a,
+.footer__menu a,
+.footer__links a {
+	color: #fff;
+	font-weight: 450;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	opacity: 0.6;
+}
+
+.footer__information a:hover,
+.footer__menu a:hover,
+.footer__links a:hover,
+.footer__website:hover {
+	color: #3A68B8;
+}
+
+.footer__about {
+	max-width: 26.1rem;
+}
+
+.footer__website {
+	display: block;
+	margin-top: 2.9rem;
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+	color: #fff;
+}
+
+.footer__social {
+	margin-top: 2.1rem;
+}
+
+.footer__social img {
+	margin-right: 2.5rem;
+}
+
+.footer__social a {
+	margin-right: 1rem;
+	color: #9DA0A5;
+	font-size: 2.1rem;
+}
+
+.fa-facebook-official:hover {
+	color: #3b5998;
+	background-color: #000;
+}
+
+.fa-instagram:hover {
+	color: 	#be34ae; 	
+}
+
+.fa-twitter-square:hover {
+	color: #55acee;
+	background-color: #fff;
+}
+
+.fa-linkedin-square:hover {
+	color: #0a66c2;
+	background-color: #fff;
+}
+
+.fa-youtube-play:hover {
+	color: #cd201f;
+	background-color: #fff;
+}
+
+.footer__language {
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-top: 4rem;
+}
+
+.footer__select {
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	font-weight: 450;
+	font-size: 1.4rem;
+	line-height: 1.8rem;
+}
+
+/*================================*/
+/*==============MEDIA=============*/
+/*================================*/
