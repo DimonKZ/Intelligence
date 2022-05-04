@@ -33,7 +33,7 @@
 		padding: 5rem;
 		display: flex;
 		flex-direction: column;
-		background-color: rgba(0, 0, 0, 0.9);
+		background-color: rgba(0, 0, 0, 0.5);
 		position: absolute;
 		top: -500%;
 		right: 0;
@@ -87,7 +87,6 @@
 
 	.header__menu {
 		width: 50%;
-		background-color: rgba(0, 0, 0, 0.5);
 	}
 
 	.header__menu a {
