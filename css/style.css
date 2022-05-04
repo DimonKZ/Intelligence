@@ -176,7 +176,12 @@ ul {
 }
 
 .intro__img {
+	max-width: 632px;
 	margin-right: -20rem;
+}
+
+.intro__img img {
+	width: 100%;
 }
 
 .btn__video {
