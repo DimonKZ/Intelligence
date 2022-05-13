@@ -265,6 +265,10 @@ ul {
 	left: -12rem;
 }
 
+.work__img img {
+	width: 100%;
+}
+
 .work__description {
 	padding-top: 18.5rem;
 }
@@ -295,6 +299,8 @@ ul {
 	width: 100%;
 	display: flex;
 	margin-bottom: 3rem;
+	position: relative;
+	transition: transform 0.7s ease;
 }
 
 .slider__item {
