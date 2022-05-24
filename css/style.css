@@ -289,6 +289,7 @@ ul {
 }
 
 .slider {
+	max-width: 1920px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -300,7 +301,7 @@ ul {
 	display: flex;
 	margin-bottom: 3rem;
 	position: relative;
-	transition: transform 0.7s ease;
+	transition: all 1s ease;
 }
 
 .slider__item {
@@ -308,7 +309,7 @@ ul {
 	text-align: center;
 	max-width: 36.2rem;
 	border-radius: 1rem;
-	background: linear-gradient(to bottom, #0C1422, #19202D);
+	background: linear-gradient(to bottom, #0C1422, #19202D);		
 }
 
 .slider__item:not(:last-child) {
@@ -361,7 +362,7 @@ ul {
 }
 
 .right {
-
+	
 }
 
 /*		  reviews
