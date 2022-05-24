@@ -10,15 +10,3 @@ function burgerMenu() {
 }
 
 burgerMenu();
-
-
-const leftBtn = document.querySelector('.left');
-const rightBtn = document.querySelector('.right');
-const sliderItem = document.querySelector('.slider__item');
-const sliderLine = document.querySelector('.slider-line');
-let offset = 0;
-// alert(sliderItem.offsetWidth)
-
-leftBtn.addEventListener('click', () => {
-	sliderLine.style.transform = `translateX(-${sliderItem.offsetWidth}px)`;
-})
