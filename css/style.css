@@ -1,4 +1,4 @@
-*, h1, h2, h3, h4, h5, h6 {
+*, h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,8 +20,9 @@ ul {
 }
 
 .container {
-  max-width: 115rem;
+  max-width: 118rem;
   margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 .btn {
@@ -44,57 +45,77 @@ ul {
   padding: 2.2rem 0;
   background: linear-gradient(180deg, #080F1C, #08101E);
 }
-
 .header__container {
   display: flex;
   align-items: center;
   position: relative;
 }
-
 .header__container .btn {
   position: absolute;
   right: 0;
 }
-
 .header__logo {
   display: flex;
   align-items: center;
 }
-
 .header__logo_img {
   margin-right: 1.5rem;
 }
-
 .header__logo_text {
   font-size: 2.2rem;
   font-weight: 600;
   color: #3A68B8;
 }
-
 .header__nav {
   display: flex;
   align-items: center;
   margin-left: 8rem;
 }
-
 .header__nav ul {
   display: flex;
 }
-
 .header__nav ul li:not(:last-child) {
   margin-right: 4rem;
   color: #fff;
 }
-
 .header__nav a {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
   transition: all 0.5s;
 }
-
 .header__nav a:hover {
   color: #3A68B8;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  right: 0;
+}
+
+.burger-menu span {
+  display: block;
+  width: 100%;
+  height: 0.4rem;
+  background-color: red;
+  transition: all 0.5s;
+}
+
+.cross span:nth-child(1) {
+  transform: translateY(1.8rem) rotate(45deg);
+}
+
+.cross span:nth-child(2) {
+  height: 0;
+}
+
+.cross span:nth-child(3) {
+  transform: translateY(-1.8rem) rotate(-45deg);
 }
 
 .section-intro {
@@ -278,7 +299,7 @@ ul {
 .experience {
   display: flex;
   background-color: #020A18;
-  padding: 17rem 0 23.5rem 0;
+  padding: 17rem 1.5rem 23.5rem 1.5rem;
 }
 
 .experience__item {
@@ -523,5 +544,48 @@ ul {
   }
   html .experience .experience__item {
     margin-right: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 7px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .footer__body {
+    flex-wrap: wrap;
+  }
+  .section-intro {
+    padding-top: 0;
+    flex-direction: column;
+  }
+  .intro {
+    padding-top: 5rem;
+  }
+  .intro__img {
+    transform: translateX(10%);
+  }
+  .intro__content {
+    width: 100%;
+    text-align: center;
+  }
+  .intro__text {
+    padding-right: 0;
+  }
+  .intro__buttons {
+    justify-content: center;
+  }
+  .title-third {
+    font-size: 3rem;
+  }
+  .partners {
+    padding-bottom: 0;
+  }
+  .experience {
+    padding: 8rem 1.5rem 8rem 1.5rem;
+  }
+  .clients {
+    padding-bottom: 8rem;
   }
 }/*# sourceMappingURL=style.css.map */

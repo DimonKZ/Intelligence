@@ -12,7 +12,6 @@
 
 @media screen and (max-width: 991px) {
 	html {
-		// font-size: 6px;
 		.experience {
 			flex-wrap: wrap;
 			justify-content: center;
@@ -29,9 +28,59 @@
 }
 
 @media screen and (max-width: 767px) {
-	// html {
-	// 	font-size: 4px;
-	// }
+	html {
+		font-size: 7px;
+	}
+
+	.header__nav {
+		display: none;
+	}
+
+	.footer__body {
+		flex-wrap: wrap;
+	}
+
+	.section-intro {
+		padding-top: 0;
+		flex-direction: column;
+	}
+
+	.intro {
+		padding-top: 5rem;
+	}
+
+	.intro__img {
+		transform: translateX(10%);
+	}
+
+	.intro__content {
+		width: 100%;
+		text-align: center;
+	}
+
+	.intro__text{
+		padding-right: 0;
+	}
+
+	.intro__buttons {
+		justify-content: center;
+	}
+	
+	.title-third {
+		font-size: 3rem;
+	}
+
+	.partners {
+		padding-bottom: 0;
+	}
+
+	.experience {
+		padding: 8rem 1.5rem 8rem 1.5rem;
+	}
+	
+	.clients {
+		padding-bottom: 8rem;
+	}
 }
 
 @media screen and (max-width: 575px) {
