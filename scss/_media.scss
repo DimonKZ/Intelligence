@@ -24,6 +24,10 @@
 		.experience .experience__item {
 			margin-right: 0;
 		}
+
+		.footer__title {
+			font-size: 1.4rem;
+		}
 	}
 }
 
@@ -32,12 +36,41 @@
 		font-size: 7px;
 	}
 
-	.header__nav {
+	nav.header__nav {
 		display: none;
 	}
 
-	.header .btn {
+	div.header__nav {
+		width: 40%;
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		transition: all 0.5s;
+		transform: translateY(-100%);
+	}
+
+	.header__nav--active {
+		transform: translateY(0);
+	}
+	
+	div.header__nav ul {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2rem;
+	}
+
+	div.header__nav a {
+		font-size: 4rem;
+	}
+
+	.header__btn {
 		display: none;
+	}
+
+	.burger-menu {
+		display: flex;
 	}
 
 	.footer__body {
@@ -64,6 +97,7 @@
 
 	.intro__text{
 		padding-right: 0;
+		font-size: 2.5rem;
 	}
 
 	.intro__buttons {
@@ -115,6 +149,14 @@
 	.experience {
 		padding: 8rem 1.5rem 8rem 1.5rem;
 	}
+
+	.experience__title {
+		font-size: 3rem;
+	}
+
+	.experience__text {
+		font-size: 2rem;
+	}
 	
 	.clients {
 		padding-bottom: 8rem;
@@ -138,11 +180,37 @@
 	.clients__img {
 		margin-top: 5rem;
 	}
+
+	.footer__info {
+		max-width: 22rem;
+	}
+
+	.footer__about {
+		max-width: 22rem;
+	}
+
+	.social__icon:not(:last-child) {
+		margin-right: 2rem;
+	}
+
+	.social__select {
+		position: relative;
+		margin-top: 2rem;
+	}
 }
 
 @media screen and (max-width: 575px) {
 	html {
 		font-size: 5px;
 	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.social__icon:not(:last-child) {
+		margin-right: 1rem;
+	}
+
+	
 
 }

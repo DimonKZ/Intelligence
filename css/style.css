@@ -95,14 +95,16 @@ ul {
   width: 4rem;
   height: 4rem;
   position: absolute;
-  right: 0;
+  right: 2rem;
+  z-index: 10;
+  cursor: pointer;
 }
 
 .burger-menu span {
   display: block;
   width: 100%;
   height: 0.4rem;
-  background-color: red;
+  background-color: #fff;
   transition: all 0.5s;
 }
 
@@ -116,6 +118,10 @@ ul {
 
 .cross span:nth-child(3) {
   transform: translateY(-1.8rem) rotate(-45deg);
+}
+
+.header__nav--active {
+  transform: translateY(0) !important;
 }
 
 .section-intro {
@@ -485,16 +491,43 @@ ul {
   html .experience .experience__item {
     margin-right: 0;
   }
+  html .footer__title {
+    font-size: 1.4rem;
+  }
 }
 @media screen and (max-width: 767px) {
   html {
     font-size: 7px;
   }
-  .header__nav {
+  nav.header__nav {
     display: none;
   }
-  .header .btn {
+  div.header__nav {
+    width: 40%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+    transform: translateY(-100%);
+  }
+  .header__nav--active {
+    transform: translateY(0);
+  }
+  div.header__nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  div.header__nav a {
+    font-size: 4rem;
+  }
+  .header__btn {
     display: none;
+  }
+  .burger-menu {
+    display: flex;
   }
   .footer__body {
     flex-wrap: wrap;
@@ -515,6 +548,7 @@ ul {
   }
   .intro__text {
     padding-right: 0;
+    font-size: 2.5rem;
   }
   .intro__buttons {
     justify-content: center;
@@ -554,6 +588,12 @@ ul {
   .experience {
     padding: 8rem 1.5rem 8rem 1.5rem;
   }
+  .experience__title {
+    font-size: 3rem;
+  }
+  .experience__text {
+    font-size: 2rem;
+  }
   .clients {
     padding-bottom: 8rem;
     flex-direction: column;
@@ -572,9 +612,27 @@ ul {
   .clients__img {
     margin-top: 5rem;
   }
+  .footer__info {
+    max-width: 22rem;
+  }
+  .footer__about {
+    max-width: 22rem;
+  }
+  .social__icon:not(:last-child) {
+    margin-right: 2rem;
+  }
+  .social__select {
+    position: relative;
+    margin-top: 2rem;
+  }
 }
 @media screen and (max-width: 575px) {
   html {
     font-size: 5px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .social__icon:not(:last-child) {
+    margin-right: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
